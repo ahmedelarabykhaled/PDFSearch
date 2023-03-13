@@ -67,6 +67,7 @@ class PDFSearch
                 $final_result['files'][] =
                     [
                         'name' => $pdf_file_details['Title'],
+                        'file' => $file,
                         'search_result' => $search_result_count
                     ];
 
