@@ -4,10 +4,26 @@ namespace Ahmedelarabykhaled\PdfSearch;
 
 class PDFSearch
 {
+    /**
+     * all files full url
+     *
+     * @var array
+     */
     private $files;
 
+    /**
+     * the string to search for
+     *
+     * @var string
+     */
     private $search_text;
 
+    /**
+     *
+     * @param string $search_text
+     * @param array $pdf_files
+     * 
+     */
     public function __construct($search_text = '', $pdf_files = [])
     {
         $this->files = $pdf_files;
@@ -15,6 +31,12 @@ class PDFSearch
         $this->search_text = $search_text;
     }
 
+    /**
+     * 
+     *
+     * @return array
+     * 
+     */
     public function search()
     {
         $parser = new \Smalot\PdfParser\Parser();
