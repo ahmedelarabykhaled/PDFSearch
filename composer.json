@@ -1,7 +1,7 @@
 {
     "name": "ahmedelarabykhaled/pdf-search",
     "description": "search for string in multiple pdf files",
-    "license": "GPL",
+    "license": "MIT",
     "require": {
         "smalot/pdfparser": "^2.3"
     },
