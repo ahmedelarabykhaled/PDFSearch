@@ -20,8 +20,8 @@ Search in pdf files
 
       // each item is a full url for the pdf file
       $pdf_files = [
-          'result.pdf',
-          'result.pdf'
+          'bath_to_tile/file_name.pdf',
+          'bath_to_tile/file_name.pdf'
       ];
 
       $pdf_search = new PDFSearch('search_word',$pdf_files);
