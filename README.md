@@ -27,11 +27,33 @@ Search in pdf files
       $pdf_search = new PDFSearch('search_word',$pdf_files);
 
       /**
-       * @return array
+       * @var $search_result = Array
+              (
+                  [files] => Array
+                      (
+                          [0] => Array
+                              (
+                                  [name] => file name
+                                  [file] => path_to_file/file_name.pdf
+                                  [search_result] => 10 // result count
+                              )
+
+                          [1] => Array
+                              (
+                                  [name] => file name
+                                  [file] => path_to_file/file_name.pdf
+                                  [search_result] => 10 // result count
+                              )
+
+                      )
+
+                  [count] => 2 // how many files has the search key
+              )
+
        */
       $search_result = $pdf_search->search();
 
   ```
 
 ## License
-  - GPL
+  - MIT
